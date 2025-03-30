@@ -1,7 +1,7 @@
-# Multi-Class Logistic Regression for Incident Classification
+# Analysis of Incident Tickets and Predicting Resolution Queue
 
 ## Overview
-This Jupyter Notebook (`Incident_Analysis_v1.0.ipynb`) contains an analysis of 76K records of incident data, including data preprocessing, exploratory data analysis (EDA), and machine learning modeling. The primary objective is to predict the state of an incident using various classification techniques.
+This Jupyter Notebook (`Incident_Analysis_v1.0.ipynb`) contains an analysis of 76K records of incident data, including data preprocessing, exploratory data analysis (EDA), and machine learning modeling. The primary objective is to predict the state of an incident using various classification techniques.  This type of prediction can help in better triage and prioritization of alerts.  
 
 ## Dataset
 The dataset consists of incident records with the following columns:
@@ -192,8 +192,7 @@ Support: 3501 instances.
 This class has a fair performance, but there’s room for improvement.
 
 
-
-Key Takeaways:
+## Key Takeaways:
 The model performs very well on certain classes (CNC, HNC, RNC) but poorly on others (CWC, Closed, HWC).
 
 Class Imbalance: There might be a class imbalance issue, particularly for classes like CWC, Closed, and HWC, which have relatively low precision and recall. Techniques like oversampling, undersampling, or class weighting may help address this.
